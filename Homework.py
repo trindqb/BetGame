@@ -93,7 +93,7 @@ class BetGame:
             A = BetGame(N,W_init,T,p)
             A.Start()
             p_bankrupt.append(A.get_Probability_Bankrupt())
-        return list_N,p_bankrupt
+        return p_bankrupt
 
     @staticmethod
     #plot probability reaching home with multiple N
@@ -124,7 +124,7 @@ class BetGame:
         plt.plot(list_W_init,p_bankrupt,'bo-',lw=2,label = 'p bankrupt')
         plt.title('Homework 1, question c')
         plt.grid(True)
-        plt.xlabel('Valuation of initial wealth(W_init=[1..20],T=100,N=100,p=0.55)')
+        plt.xlabel('Valuation of initial wealth')
         plt.ylabel('Probability of reaching home(Bankruptcy)')
         plt.legend(loc = 0)
         plt.show()
@@ -144,7 +144,7 @@ class BetGame:
         plt.plot(list_p,p_bankrupt,'bo-',lw = 2,label = 'p bankrupt')
         plt.title('Homework 1, question d')
         plt.grid(True)
-        plt.xlabel('Valuation of p win(W_init = 10 ,T = 1000, N=100, p=[0.3:0.7 ,step= 0.02])')
+        plt.xlabel('Valuation of p win')
         plt.ylabel('Probability of reaching home(Bankruptcy)')
         plt.legend(loc = 0)
         plt.show()

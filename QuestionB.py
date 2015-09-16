@@ -1,6 +1,9 @@
 __author__ = 'TriNguyenDang'
 from Homework import *
 
+N = np.arange(2,2001,1,int)
+W_init = 10
+T = 100
+p = 0.55
 
-list_N,list_p = BetGame.p_ReachingHome(2,1000,10,100,0.55)
-BetGame.Plot_p_ReachingHome(list_p,list_N)
+BetGame.plot_p_RH_N(BetGame.get_p_RH_N(N,W_init,T,p),N)
