@@ -1,10 +1,13 @@
 __author__ = 'TriNguyenDang'
 from Homework import *
 
-N = 100
-T = 1000
+N = 1000
+T = 100
 W_init = 10
 p = np.arange(0.3,0.72,0.02)
+title = 'Probability of reaching home as a function of p'
+p_bankrupt = BetGame.get_p_ReachingHome_multi_p(N,W_init,T,p)
 
-BetGame.plot_p_RH_p(p,BetGame.get_p_RH_p(N,W_init,T,p))
+BetGame.multi_Plot(p,p_bankrupt,'blue','o','p bankrupt','Winning probability', 'Probability reaching home',title)
+BetGame.show_plot()
 
