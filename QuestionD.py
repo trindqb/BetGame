@@ -2,7 +2,7 @@ __author__ = 'TriNguyenDang'
 from Homework import *
 
 N = 1000
-T = 100
+T = 1000
 W_init = 10
 p = np.arange(0.3,0.72,0.02)
 title = 'Probability of reaching home as a function of p'

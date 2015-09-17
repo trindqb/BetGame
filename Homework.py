@@ -108,6 +108,13 @@ class BetGame:
         for player in self.info_Player:
             player.Draw(Color)
 
+
+    def get_T_0(self):
+        T_0 = []
+        for player in self.list_Player:
+            T_0.append(player.T_0)
+        return T_0
+
     @staticmethod
     #calculate probability reaching home with multiple N = [(N given)..MaxN] exp:N = [50..1000]
     def get_p_ReachingHome_N_Times(Run_times,num_Player,W_init,T,p):

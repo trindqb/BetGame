@@ -4,11 +4,11 @@ from Homework import *
 
 A = Player(W_init = 20, T = 1000, p = 0.25)
 A.Play()
-A.Draw_Wealth('blue')
+A.Draw_Wealth('red')
 
 B = Player(W_init = 20, T = 1000, p = 0.55)
 B.Play()
-B.Draw_Wealth('red')
+B.Draw_Wealth('blue')
 
 C = Player(W_init = 20, T = 1000, p = 0.75)
 C.Play()
