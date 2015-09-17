@@ -1,7 +1,7 @@
 __author__ = 'TriNguyenDang'
 from Homework import *
 
-Run_times = 100
+Run_times = 5000
 N = 1000
 W_init = 10
 T = 100
