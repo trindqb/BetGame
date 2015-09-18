@@ -123,6 +123,7 @@ class BetGame:
             A = BetGame(num_Player,W_init,T,p)
             A.Start()
             p_bankrupt.append(A.get_Probability_Bankrupt())
+            num_Player+=10
         return p_bankrupt
 
 
